@@ -34,7 +34,7 @@ void i_am(U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C screen) {
   screen.setCursor(5, 30);
   screen.print("USTAW CZAS I DATE");
   screen.sendBuffer();
-  delay(4000);
+  delay(10);
 }
 void meteo(U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C screen, DHT dht1, Adafruit_BMP085 bmp1) {
   screen.clearBuffer();
