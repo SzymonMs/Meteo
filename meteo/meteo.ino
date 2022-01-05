@@ -1,11 +1,10 @@
-#include <Wire.h>
-#include <Adafruit_BMP085.h>
 #include <Arduino.h>
-#include <U8g2lib.h>
+#include <Wire.h>
 #include <SPI.h>
-#include <Adafruit_BMP085.h>
+#include "Adafruit_BMP085.h"
+#include "U8g2lib.h"
 #include "DHT.h"
-#include <DS3231.h>
+#include "DS3231.h"
 
 #define DHTPIN 2
 #define START 8
