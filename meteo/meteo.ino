@@ -15,12 +15,12 @@ DHT dht;
 U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0);
 Adafruit_BMP085 bmp;
 DS3231 clock;
+RTCDateTime dt;
 int year = 2021;
 int month = 0;
 int day = 0;
 int hour = 12;
 int minute = 0;
-RTCDateTime dt;
 bool running = false;
 int counter = 0;
 const char DEGREE_SYMBOL[] = {0xB0, '\0'};
@@ -81,7 +81,6 @@ void times(U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C screen, RTCDateTime dt, int ti
   delay(tim);
 }
 void times2(U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C screen, RTCDateTime dt, int tim) {
-
   screen.clearBuffer();
   screen.setCursor(30, 10);
   if(dt.day<10)
